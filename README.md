@@ -7,13 +7,13 @@
 **nrm run build** - собрать проект
 **nrm run start** - собрать и запустить проект
 
-[https://dainty-syrniki-81336b.netlify.app/](https://dainty-syrniki-81336b.netlify.app/ - Ссылка на приложение)
+[https://dainty-syrniki-81336b.netlify.app/ - Ссылка на приложение](https://dainty-syrniki-81336b.netlify.app/)
 
 ### Готовые страницы
-- [https://dainty-syrniki-81336b.netlify.app/](Главная - ссылки на остальные страницы)
-- [https://dainty-syrniki-81336b.netlify.app/sign-in.html](Войти)
-- [https://dainty-syrniki-81336b.netlify.app/sign-up.html](Зарегистрироваться)
-- [https://dainty-syrniki-81336b.netlify.app/profile.html](Профиль)
-- [https://dainty-syrniki-81336b.netlify.app/chat.html](Чат)
-- [https://dainty-syrniki-81336b.netlify.app/error-404.html](Ошибка 404)
-- [https://dainty-syrniki-81336b.netlify.app/error-500.html](Ошибка 500)
+- [Главная - ссылки на остальные страницы](https://dainty-syrniki-81336b.netlify.app/)
+- [Войти](https://dainty-syrniki-81336b.netlify.app/sign-in.html)
+- [Зарегистрироваться](https://dainty-syrniki-81336b.netlify.app/sign-up.html)
+- [Профиль](https://dainty-syrniki-81336b.netlify.app/profile.html)
+- [Чат](https://dainty-syrniki-81336b.netlify.app/chat.html)
+- [Ошибка 404](https://dainty-syrniki-81336b.netlify.app/error-404.html)
+- [Ошибка 500](https://dainty-syrniki-81336b.netlify.app/error-500.html)
