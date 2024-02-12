@@ -1,0 +1,11 @@
+.profile-list {
+    width: 100%;
+
+    &__item {
+        padding: 10px 0;
+
+        & + & {
+            border-top: 1px solid $gray-200;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.link {
+    display: flex;
+    align-items: center;
+
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 1;
+    color: $blue;
+    text-decoration: none;
+
+    opacity: 1;
+    transition: $transition-main;
+
+    &__icon {
+        margin-left: 4px;
+        width: 12px;
+        fill: currentColor;
+    }
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &--gray {
+        color: $gray;
+    }
+
+    &--red {
+        color: $red;
+    }
+
+    &--big {
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,55 @@
+.text-input {
+    position: relative;
+
+    padding-top: 10px;
+
+    &__label {
+        position: absolute;
+        top: 16px;
+        left: 0;
+
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 1;
+        color: $gray;
+
+        transition: $transition-main;
+    }
+
+    &:focus &, &:valid & {
+        &__label {
+            top: 0;
+            font-size: 9px;
+        }
+    }
+
+    &__field {
+        width: 100%;
+        padding: 6px 0;
+
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 1;
+        color: $black;
+
+        border: none;
+        background: transparent;
+        border-bottom: 1px solid $blue;
+
+        &:focus, &:valid {
+            & ~ .text-input__label {
+                top: 0;
+                font-size: 9px;
+            }
+        }
+    }
+
+    &__error {
+        display: block;
+        margin-top: 6px;
+
+        font-size: 8px;
+        line-height: 1;
+        color: $red-500;
+    }
+}
