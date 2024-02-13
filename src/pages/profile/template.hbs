@@ -3,11 +3,16 @@
         {{{ backButton }}}
     </div>
 
-    <div class="profile-page__body">
+    {{#if isForm}}
+        <form class="profile-page__body">
+    {{else}}
+        <div class="profile-page__body">
+    {{/if}}
+
         <div class="profile-page__body-wrapper">
             {{{ avatar }}}
 
-            <span class="profile-page__name">
+            <span class="profile-page__name {{#if isNameHidden }} hidden {{/if}}">
                 {{ name }}
             </span>
 
@@ -15,4 +20,10 @@
             {{{ actions }}}
         </div>
     </div>
+
+    {{#if isForm}}
+        </form>
+    {{else}}
+        </div>
+    {{/if}}
 </div>

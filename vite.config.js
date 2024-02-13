@@ -13,6 +13,8 @@ export default defineConfig({
         'sign-in': resolve(__dirname, 'src/sign-in.html'),
         'sign-up': resolve(__dirname, 'src/sign-up.html'),
         'profile': resolve(__dirname, 'src/profile.html'),
+        'edit-profile': resolve(__dirname, 'src/edit-profile.html'),
+        'edit-password': resolve(__dirname, 'src/edit-password.html'),
         'chat': resolve(__dirname, 'src/chat.html'),
         'error-404': resolve(__dirname, 'src/error-404.html'),
         'error-500': resolve(__dirname, 'src/error-500.html')

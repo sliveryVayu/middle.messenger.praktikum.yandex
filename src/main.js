@@ -21,6 +21,8 @@ import ProfileList from "./pages/profile/modules/ProfileList/index.js";
 import ProfileListItem from "./pages/profile/modules/ProfileListItem/index.js";
 import IconButton from "./components/IconButton/index.js";
 import Error from "./pages/error/index.js";
+import Button from "./components/Button/index.js";
+import ProfileInput from "./pages/profile/modules/ProfileInput/index.js";
 
 document.addEventListener('DOMContentLoaded', () => {
   const signInPageEl = document.getElementById('sign-in');
@@ -78,6 +80,68 @@ document.addEventListener('DOMContentLoaded', () => {
           className: item.isRed ? 'link--red link--big profile-list__item' : 'link--big profile-list__item',
         })).join(''),
         className: 'profile-page__user-info'
+      })
+    })
+  }
+
+  const editProfilePageEl = document.getElementById('edit-profile');
+
+  if (editProfilePageEl) {
+    editProfilePageEl.innerHTML = Profile({
+      isForm: true,
+
+      backButton: IconButton({
+        iconLeft: true
+      }),
+      avatar: Avatar({
+        image: 'https://placehold.co/260x260'
+      }),
+      name: 'Иван',
+      isNameHidden: true,
+      userInfo: ProfileList({
+        items: profileData.info.map((item) => ProfileListItem({
+          ...item,
+          className: 'profile-list__item',
+          editable: true,
+          input: ProfileInput(item)
+        })).join(''),
+        className: 'profile-page__user-info'
+      }),
+      actions: Button({
+        type: 'submit',
+        text: 'Сохранить',
+        className: 'profile-page__save-btn'
+      })
+    })
+  }
+
+  const editPasswordPageEl = document.getElementById('edit-password');
+
+  if (editPasswordPageEl) {
+    editPasswordPageEl.innerHTML = Profile({
+      isForm: true,
+
+      backButton: IconButton({
+        iconLeft: true
+      }),
+      avatar: Avatar({
+        image: 'https://placehold.co/260x260'
+      }),
+      name: 'Иван',
+      isNameHidden: true,
+      userInfo: ProfileList({
+        items: profileData.passwordInfo.map((item) => ProfileListItem({
+          ...item,
+          className: 'profile-list__item',
+          editable: true,
+          input: ProfileInput(item)
+        })).join(''),
+        className: 'profile-page__user-info'
+      }),
+      actions: Button({
+        type: 'submit',
+        text: 'Сохранить',
+        className: 'profile-page__save-btn'
       })
     })
   }
