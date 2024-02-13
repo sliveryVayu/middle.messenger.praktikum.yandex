@@ -41,9 +41,18 @@
         line-height: 1;
         font-weight: 600;
         color: $black;
+
+        &.hidden {
+            opacity: 0;
+        }
     }
 
     &__user-info {
         margin-bottom: 40px;
+    }
+
+    &__save-btn {
+        margin-left: auto;
+        margin-right: auto;
     }
 }

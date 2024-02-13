@@ -14,6 +14,8 @@
 - [Войти](https://dainty-syrniki-81336b.netlify.app/sign-in.html)
 - [Зарегистрироваться](https://dainty-syrniki-81336b.netlify.app/sign-up.html)
 - [Профиль](https://dainty-syrniki-81336b.netlify.app/profile.html)
+- [Редактирование профиля](https://dainty-syrniki-81336b.netlify.app/profile.html)
+- [Редактирование пароля](https://dainty-syrniki-81336b.netlify.app/profile.html)
 - [Чат](https://dainty-syrniki-81336b.netlify.app/chat.html)
 - [Ошибка 404](https://dainty-syrniki-81336b.netlify.app/error-404.html)
 - [Ошибка 500](https://dainty-syrniki-81336b.netlify.app/error-500.html)
