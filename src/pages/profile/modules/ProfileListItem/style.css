@@ -1,0 +1,19 @@
+.profile-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__label, &__value {
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 1;
+    }
+
+    &__label {
+        color: $black;
+    }
+
+    &__value {
+        color: $gray;
+    }
+}

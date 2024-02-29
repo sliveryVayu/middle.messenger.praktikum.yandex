@@ -1,0 +1,29 @@
+<div class="profile-page">
+    <div class="profile-page__side">
+        {{{ backButton }}}
+    </div>
+
+    {{#if isForm}}
+        <form class="profile-page__body">
+    {{else}}
+        <div class="profile-page__body">
+    {{/if}}
+
+        <div class="profile-page__body-wrapper">
+            {{{ avatar }}}
+
+            <span class="profile-page__name {{#if isNameHidden }} hidden {{/if}}">
+                {{ name }}
+            </span>
+
+            {{{ userInfo }}}
+            {{{ actions }}}
+        </div>
+    </div>
+
+    {{#if isForm}}
+        </form>
+    {{else}}
+        </div>
+    {{/if}}
+</div>

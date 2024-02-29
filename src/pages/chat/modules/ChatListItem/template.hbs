@@ -1,0 +1,32 @@
+<div class="chat-list-item">
+    <div class="chat-list-item__image">
+        <img src="{{ image }}" alt="Изображение чата {{ name }}">
+    </div>
+
+    <div class="chat-list-item__content">
+        <div class="chat-list-item__message-wrapper">
+            <span class="chat-list-item__name">
+                {{ name }}
+            </span>
+            <div class="chat-list-item__message">
+                {{#if lastMessage.isSelf }}
+                    <b>Вы: </b>
+                {{/if}}
+
+                {{ lastMessage.text }}
+            </div>
+        </div>
+
+        <div class="chat-list-item__info">
+                <span class="chat-list-item__time">
+                    {{ lastMessage.time }}
+                </span>
+
+            {{#if unreadMessagesCount }}
+                <span class="chat-list-item__unread">
+                    {{ unreadMessagesCount }}
+                </span>
+            {{/if}}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+.profile-input {
+    padding: 0;
+
+    font-size: 13px;
+    font-weight: 500;
+    text-align: right;
+    color: $gray;
+
+    background: none;
+    border: none;
+}

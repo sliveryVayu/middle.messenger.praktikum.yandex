@@ -1,0 +1,16 @@
+.chat-list {
+    padding: 20px 10px;
+    background: $gray-50;
+
+    overflow: auto;
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        padding-bottom: 10px;
+
+        border-bottom: 1px solid $gray-200;
+    }
+}

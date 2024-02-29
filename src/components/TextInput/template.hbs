@@ -1,0 +1,18 @@
+<label class="text-input">
+    <input
+            required
+            type="{{ type }}"
+            class="text-input__field"
+            name="{{ name }}"
+    >
+
+    <span class="text-input__label">
+        {{ label }}
+    </span>
+
+    {{#if error }}
+        <span class="text-input__error">
+            {{ error }}
+        </span>
+    {{/if }}
+</label>

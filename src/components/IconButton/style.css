@@ -1,0 +1,26 @@
+.icon-button {
+    width: 28px;
+    height: 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: $blue;
+    border: none;
+    border-radius: 50%;
+    overflow: hidden;
+
+    cursor: pointer;
+    opacity: 1;
+    transition: $transition-main;
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    svg {
+        width: 12px;
+        color: white;
+    }
+}
